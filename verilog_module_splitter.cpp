@@ -12,9 +12,9 @@ int main()
 	string str,fileName,in_path,out_path;
 
 	cout<<"Enter full path of input file (eg. C:\\folder1\\test.v):\n";
-	cin>>in_path;
+	getline(cin,in_path);
 	cout<<"\nEnter full path of output/destination folder (eg. C:\\folder1\\SplitFiles) :\n";
-	cin>>out_path;
+	getline(cin,out_path);
 	ifstream fin(in_path);
 	
 	int i;
